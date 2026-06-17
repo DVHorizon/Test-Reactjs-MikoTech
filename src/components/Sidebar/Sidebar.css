@@ -3,8 +3,21 @@
 .sidebar-container {
   position: relative;
   width: 100%;
-  height: 380px; /* Chiều cao cố định khớp với Slider */
-  z-index: 100; /* Đứng trên slider nhưng đứng dưới modal/header */
+  height: 100%;
+  z-index: 105;
+}
+
+/* Cầu nối trong suốt gắn trực tiếp vào container để mở rộng vùng hover thêm 20px sang phải */
+.sidebar-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 20px;
+  height: 100%;
+  background: transparent;
+  z-index: 106;
+  pointer-events: auto;
 }
 
 .sidebar-menu {
@@ -16,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 10px 0;
   box-sizing: border-box;
 }
 
@@ -24,13 +37,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12px;
-  height: 28px; /* Tự động chia đều cho 12 mục */
+  padding: 12px;
+  height: 50px;
+  /* Tự động chia đều cho 12 mục */
   cursor: pointer;
   transition: all 0.15s ease;
-  font-size: 12px;
+  font-size: 14px;
   color: #333333;
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
 }
 
@@ -40,10 +54,11 @@
   gap: 10px;
 }
 
-.sidebar-cat-info svg {
+.sidebar-cat-icon-img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
   flex-shrink: 0;
-  color: #555555;
-  transition: color 0.15s ease;
 }
 
 .sidebar-cat-name {
@@ -53,7 +68,7 @@
 }
 
 .sidebar-arrow {
-  font-size: 10px;
+  font-size: 15px;
   opacity: 0.5;
   transition: transform 0.15s ease;
 }
@@ -83,17 +98,19 @@
   top: 0;
   left: 100%;
   width: 680px;
-  height: 100%;
+  height: 400px;
   background-color: #ffffff;
-  border-radius: 0 12px 12px 0;
+  border-radius: 12px;
   border: 1px solid #eaeaea;
   border-left: none;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.12);
   z-index: 110;
   padding: 20px 24px;
+  margin: 0 10px 0 10px;
   box-sizing: border-box;
   overflow-y: auto;
 }
+
 
 /* Custom scrollbar for mega menu */
 .sidebar-mega-menu::-webkit-scrollbar {
@@ -135,24 +152,7 @@
   text-transform: uppercase;
 }
 
-.sidebar-mega-items {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
 
-.sidebar-mega-item {
-  font-size: 11.5px;
-  color: #555555;
-  text-decoration: none;
-  line-height: 1.3;
-  transition: color 0.15s ease;
-}
-
-.sidebar-mega-item:hover {
-  color: #d70018;
-  font-weight: 500;
-}
 
 /* Animation fade in */
 .animate-fade-in {
@@ -164,8 +164,56 @@
     opacity: 0;
     transform: translateX(8px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* Giao diện lưới logo thương hiệu dạng hộp viền xám giống mockup */
+.sidebar-mega-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.sidebar-brand-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+}
+
+.sidebar-brand-logo-box:hover {
+  border-color: #d70018;
+  box-shadow: 0 3px 8px rgba(215, 0, 24, 0.08);
+}
+
+.brand-logo-img {
+  max-width: 100%;
+  max-height: 22px;
+  object-fit: contain;
+}
+
+.brand-logo-text {
+  font-size: 11.5px;
+  color: #333333;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-brand-logo-box.span-2 {
+  grid-column: span 2;
 }

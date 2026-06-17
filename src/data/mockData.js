@@ -129,11 +129,11 @@ export const sidebarCategories = [
     subGroups: [
       {
         title: "Thương Hiệu Điện Thoại",
-        items: ["iPhone", "Samsung", "Xiaomi", "OPPO", "vivo", "realme", "Nokia"]
+        items: ["iPhone", "Samsung", "OPPO", "Xiaomi", "TECNO", "HONOR", "nubia", "SONY", "NOKIA", "NOTHING", "Masstel", "realme", "itel", "HUAWEI", "MEIZU", "Infinix"]
       },
       {
         title: "Thương Hiệu Tablet",
-        items: ["iPad", "Samsung Galaxy Tab", "Xiaomi Pad", "Lenovo Tab", "Huawei MatePad"]
+        items: ["iPad", "Samsung", "Xiaomi", "HUAWEI", "Lenovo", "TECLAST", "nubia", "HONOR", "OPPO", "Máy đọc sách", "Kindle", "BOOX", "Xem thêm tất cả Tablet"]
       },
       {
         title: "Mức Giá Điện Thoại",
@@ -386,4 +386,56 @@ export const subBannersList = [
 export const bottomWideBannerData = {
   imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1200:115/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/b2s-banner-chay-ngang-deal-khung.gif",
   link: "#"
+};
+
+// 9. Icon các danh mục Sidebar từ CDN CellphoneS
+export const categoryIcons = {
+  "phone": "https://dashboard.cellphones.com.vn/storage/icon-homepage-mobile.svg",
+  "laptop": "https://dashboard.cellphones.com.vn/storage/icon-homepage-laptop.svg",
+  "audio": "https://dashboard.cellphones.com.vn/storage/icon-homepage-audio-2.svg",
+  "watch": "https://dashboard.cellphones.com.vn/storage/icon-homepage-watch.svg",
+  "home": "https://dashboard.cellphones.com.vn/storage/icon-homepage-home-appliances.svg",
+  "accessories": "https://dashboard.cellphones.com.vn/storage/icon-homepage-accessories.svg",
+  "pc": "https://dashboard.cellphones.com.vn/storage/icon-homepage-pc.svg",
+  "tv": "https://dashboard.cellphones.com.vn/storage/icon-homepage-tv.svg",
+  "trade": "https://dashboard.cellphones.com.vn/storage/icon-homepage-trade-in.svg",
+  "used": "https://dashboard.cellphones.com.vn/storage/icon-homepage-used-goods.svg",
+  "promo": "https://dashboard.cellphones.com.vn/storage/icon-homepage-promotions.svg",
+  "news": "https://dashboard.cellphones.com.vn/storage/icon-homepage-tech-news.svg"
+};
+
+// 10. Logo thương hiệu chính thức từ CDN CellphoneS (dùng chữ thường làm key để tìm kiếm không phân biệt hoa thường)
+export const brandLogos = {
+  "iphone": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/iPhone-240x50.png",
+  "ipad": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/iPad-240x50.png",
+  "samsung": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Samsung-240x50.png",
+  "samsung galaxy tab": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Samsung-240x50.png",
+  "xiaomi": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/XIAOMI-new-240x50.png",
+  "xiaomi pad": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/XIAOMI-new-240x50.png",
+  "oppo": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Oppo-240x50.png",
+  "vivo": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Vivo-240x50.png",
+  "realme": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Realme-240x50.png",
+  "nokia": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Nokia-240x50.png",
+  "huawei": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/HUAWEI-240x50.png",
+  "huawei matepad": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/HUAWEI-240x50.png",
+  "lenovo": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/lenovo-240x50.png",
+  "lenovo tab": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/lenovo-240x50.png",
+  "tecno": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/TECNO-240x50.png",
+  "honor": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Honor-240x50.png",
+  "nubia": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Nubia-240x50.png",
+  "sony": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/SONY-240x50.png",
+  "nothing": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Nothing-240x50.png",
+  "masstel": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Mastel-240x50.png",
+  "itel": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Itel-240x50.png",
+  "meizu": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/MEIZU-240x50.png",
+  "infinix": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Infinix-240x50.png",
+  "teclast": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Teclast-240x50.png",
+  "boox": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/boox-240x50.png",
+  "macbook": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Macbook-240x50.png",
+  "asus": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/ASUS-240x50.png",
+  "msi": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/MSI-240x50.png",
+  "acer": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/acer-240x50.png",
+  "dell": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/Dell-240x50.png",
+  "hp": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/HP-240x50.png",
+  "gigabyte": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/gigabyte-240x50.png"
 };

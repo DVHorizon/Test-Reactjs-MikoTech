@@ -3,6 +3,10 @@
   height: 80px;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .header-content {
@@ -688,4 +692,10 @@
 
 .mega-item:hover {
   color: #d70018;
+}
+
+
+
+.btn-category.active {
+  background-color: var(--primary-hover, #c20014) !important;
 }
