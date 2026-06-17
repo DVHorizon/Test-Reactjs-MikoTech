@@ -1,0 +1,47 @@
+/* Cấu hình layout chính cho trang web */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-page);
+}
+
+.main-content {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Khoảng cách dọc giữa các hàng chính */
+}
+
+/* Hàng chính chứa Sidebar (dọc), Slider (giữa) và Widgets (phải) */
+.hero-row {
+  display: grid;
+  grid-template-columns: 230px 1fr 270px;
+  gap: 15px;
+  align-items: start;
+}
+
+/* Khối bao phủ nền khi mở modal hoặc hover Danh mục */
+.global-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền tối nhẹ */
+  z-index: 99; /* Đứng sau modal/header gợi ý nhưng đứng trên body */
+  backdrop-filter: blur(4px); /* Làm mờ */
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
