@@ -1,0 +1,127 @@
+.top-bar {
+  background: var(--topbar-gradient);
+  color: var(--text-white);
+  height: 34px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.top-bar-content {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marquee-container {
+  width: 55%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  gap: 16px;
+  animation: marquee-anim 25s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.marquee-item::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.45);
+  flex: 0 0 auto;
+}
+
+.topbar-icon {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+@keyframes marquee-anim {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.top-bar-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-bar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  min-height: 28px;
+  padding: 4px 10px;
+  background-color: transparent;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.top-bar-btn::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.top-bar-btn:hover {
+  background-color: transparent;
+  transform: scale(0.96);
+}
+
+.top-bar-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.top-bar-btn:hover .top-bar-btn-inner {
+  transform: none;
+}
+
+.top-bar-btn svg,
+.btn-icon {
+  flex-shrink: 0;
+}
+
+.top-bar-btn .btn-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  display: inline-block;
+}

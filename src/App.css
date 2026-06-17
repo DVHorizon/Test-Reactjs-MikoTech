@@ -16,6 +16,14 @@
   gap: 15px; /* Khoảng cách dọc giữa các hàng chính */
 }
 
+.site-header {
+  background: var(--navbar-gradient);
+  color: var(--text-white);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(216, 21, 35, 0.18);
+}
+
 /* Hàng chính chứa Sidebar (dọc), Slider (giữa) và Widgets (phải) */
 .hero-row {
   display: grid;

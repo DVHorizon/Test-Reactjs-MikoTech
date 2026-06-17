@@ -2,7 +2,9 @@
 :root {
   --primary-color: #d70018;        /* Màu đỏ CellphoneS */
   --primary-hover: #b20013;        /* Đỏ sậm khi hover */
-  --bg-header: #e0052b;            /* Màu đỏ nền header */
+  --bg-header: #d91523;            /* Màu đỏ nền header */
+  --topbar-gradient: linear-gradient(180deg, #e3505f 0%, #e14854 100%);
+  --navbar-gradient: linear-gradient(180deg, #e14854 0%, #de3b47 40%, #d91523 100%);
   --bg-page: #f4f4f4;              /* Màu nền xám nhạt toàn trang */
   --text-dark: #3f3f3f;            /* Màu chữ tối chính */
   --text-light: #707070;           /* Màu chữ xám phụ */

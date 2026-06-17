@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import TopBar from './components/TopBar/TopBar';
 
 function App() {
   // Quản lý trạng thái hiển thị overlay toàn cục (khi hover danh mục hoặc mở modal)
@@ -7,10 +8,13 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* 1. Thanh tiện ích trên cùng */}
+      <TopBar />
+
       {/* Lớp phủ mờ toàn trang khi cần thiết */}
       {showOverlay && <div className="global-overlay" onClick={() => setShowOverlay(false)} />}
 
-      <header style={{ backgroundColor: 'var(--bg-header)', color: 'white', padding: '20px', textAlign: 'center' }}>
+      <header className="site-header">
         <h2>CellphoneS</h2>
       </header>
 
