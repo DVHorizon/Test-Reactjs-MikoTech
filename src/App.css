@@ -17,11 +17,11 @@
 }
 
 .site-header {
-  background: var(--navbar-gradient);
-  color: var(--text-white);
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(216, 21, 35, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 /* Hàng chính chứa Sidebar (dọc), Slider (giữa) và Widgets (phải) */

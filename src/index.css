@@ -50,21 +50,30 @@ input {
   outline: none;
 }
 
-/* Kiểu thanh cuộn tròn cho modal và danh sách dài */
-::-webkit-scrollbar {
+/* Hủy outline mặc định khi focus vào button để tránh hiện viền lạ */
+button:focus {
+  outline: none;
+}
+
+/* Kiểu thanh cuộn tròn cho các container cuộn cụ thể (tránh ảnh hưởng tới scrollbar chính của trình duyệt) */
+.modal-body::-webkit-scrollbar,
+.trending-grid::-webkit-scrollbar {
   width: 6px;
 }
 
-::-webkit-scrollbar-track {
+.modal-body::-webkit-scrollbar-track,
+.trending-grid::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+.modal-body::-webkit-scrollbar-thumb,
+.trending-grid::-webkit-scrollbar-thumb {
   background: #c1c1c1;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.modal-body::-webkit-scrollbar-thumb:hover,
+.trending-grid::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }

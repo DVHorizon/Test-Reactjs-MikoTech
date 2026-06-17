@@ -1,7 +1,7 @@
 .top-bar {
   background: var(--topbar-gradient);
   color: var(--text-white);
-  height: 34px;
+  height: 45px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -124,4 +124,9 @@
   font-weight: 400;
   line-height: 1;
   display: inline-block;
+}
+
+.size-4 {
+  width: 28px;
+  height: 20px;
 }
