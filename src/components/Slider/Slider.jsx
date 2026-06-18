@@ -8,7 +8,6 @@ import SliderSubBanners from './components/SliderSubBanners';
 function Slider() {
   const [clickedIndex, setClickedIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const [isTabsHovered, setIsTabsHovered] = useState(false);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -132,17 +131,15 @@ function Slider() {
   };
 
   useEffect(() => {
-    if (!isHovered) {
-      autoPlayTimer.current = setInterval(() => {
-        handleNextSlide();
-      }, 4000);
-    }
+    autoPlayTimer.current = setInterval(() => {
+      handleNextSlide();
+    }, 4000);
     return () => {
       if (autoPlayTimer.current) {
         clearInterval(autoPlayTimer.current);
       }
     };
-  }, [clickedIndex, isHovered, handleNextSlide]);
+  }, [clickedIndex, handleNextSlide]);
 
   useEffect(() => {
     const activeTab = tabRefs.current[activeIndex];
@@ -208,17 +205,9 @@ function Slider() {
     changeSlide(slideIndex);
   };
 
-  const handleMouseLeaveSlider = () => {
-    setIsHovered(false);
-  };
-
   return (
     <div className="slider-column-container">
-      <div
-        className="hero-slider"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={handleMouseLeaveSlider}
-      >
+      <div className="hero-slider">
         <SliderTabs
           activeIndex={activeIndex}
           clickedIndex={clickedIndex}
