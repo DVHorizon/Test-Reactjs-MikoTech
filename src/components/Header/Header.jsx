@@ -8,7 +8,6 @@ function Header({ showOverlay, onToggleOverlay }) {
   const [provinceSearch, setProvinceSearch] = useState('');
 
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [showCartModal, setShowCartModal] = useState(false);
 
   const sortedProvinces = [...provincesList].sort((a, b) => {
     if (a === 'Hồ Chí Minh') return -1;
@@ -40,7 +39,7 @@ function Header({ showOverlay, onToggleOverlay }) {
 
           <SearchBox />
 
-          <CartButton onClick={() => setShowCartModal(true)} />
+          <CartButton onClick={() => setShowLoginModal(true)} />
 
           <LoginButton onClick={() => setShowLoginModal(true)} />
         </div>
@@ -69,18 +68,6 @@ function Header({ showOverlay, onToggleOverlay }) {
             <button className="auth-modal-btn btn-signup-modal">Đăng ký</button>
             <button className="auth-modal-btn btn-login-modal">Đăng nhập</button>
           </>
-        }
-      />
-
-      <AuthModal
-        isOpen={showCartModal}
-        onClose={() => setShowCartModal(false)}
-        title="Giỏ hàng"
-        description="Giỏ hàng của bạn đang trống. Vui lòng thêm sản phẩm để tiến hành mua sắm."
-        actions={
-          <button className="auth-modal-btn btn-login-modal" style={{ width: '100%' }} onClick={() => setShowCartModal(false)}>
-            Tiếp tục mua sắm
-          </button>
         }
       />
     </>
