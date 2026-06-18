@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import './Slider.css';
-import { heroSlides, subBannersList } from '../../data/mockData';
+import { heroSlides } from '../../data/mockData';
+import SliderTabs from './components/SliderTabs';
+import SliderBanner from './components/SliderBanner';
+import SliderSubBanners from './components/SliderSubBanners';
 
 function Slider() {
   const [clickedIndex, setClickedIndex] = useState(0);
@@ -216,130 +219,34 @@ function Slider() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={handleMouseLeaveSlider}
       >
-        <div
-          className="slider-tabs-container"
-          onMouseEnter={() => setIsTabsHovered(true)}
-          onMouseLeave={() => setIsTabsHovered(false)}
-        >
-          {isTabsHovered && (
-            <button
-              className={`tab-scroll-btn tab-scroll-left${!canScrollLeft ? ' tab-scroll-disabled' : ''}`}
-              onClick={handlePrevTabs}
-              aria-label="Cuộn tab sang trái"
-            >
-              &lt;
-            </button>
-          )}
+        <SliderTabs
+          activeIndex={activeIndex}
+          clickedIndex={clickedIndex}
+          isTabsHovered={isTabsHovered}
+          setIsTabsHovered={setIsTabsHovered}
+          canScrollLeft={canScrollLeft}
+          canScrollRight={canScrollRight}
+          tabsWrapperRef={tabsWrapperRef}
+          tabRefs={tabRefs}
+          handlePrevTabs={handlePrevTabs}
+          handleNextTabs={handleNextTabs}
+          handleTabDragStart={handleTabDragStart}
+          handleTabDragMove={handleTabDragMove}
+          handleTabDragEnd={handleTabDragEnd}
+          handleTabMouseLeave={handleTabMouseLeave}
+          handleTabClick={handleTabClick}
+        />
 
-          <div
-            className="slider-tabs-wrapper"
-            ref={tabsWrapperRef}
-            onMouseDown={handleTabDragStart}
-            onMouseMove={handleTabDragMove}
-            onMouseUp={handleTabDragEnd}
-            onMouseLeave={handleTabMouseLeave}
-            onTouchStart={handleTabDragStart}
-            onTouchMove={handleTabDragMove}
-            onTouchEnd={handleTabDragEnd}
-            onDragStart={(e) => e.preventDefault()}
-          >
-            {heroSlides.map((slide, slideIndex) => {
-              const isFolderActive = slideIndex === activeIndex;
-              const isTitleRed = slideIndex === clickedIndex;
-
-              return (
-                <div
-                  key={slide.id}
-                  ref={(el) => (tabRefs.current[slideIndex] = el)}
-                  className={`slider-tab-item ${isFolderActive ? 'active-folder' : ''}`}
-                  onClick={(e) => handleTabClick(e, slideIndex)}
-                >
-                  <div className="tab-item-content">
-                    <div className={`tab-title-text ${isTitleRed ? 'red-text' : ''}`}>
-                      {slide.tabTitle}
-                    </div>
-                    <div className="tab-subtitle-text">
-                      {slide.tabSubtitle}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {isTabsHovered && (
-            <button
-              className={`tab-scroll-btn tab-scroll-right${!canScrollRight ? ' tab-scroll-disabled' : ''}`}
-              onClick={handleNextTabs}
-              aria-label="Cuộn tab sang phải"
-            >
-              &gt;
-            </button>
-          )}
-        </div>
-
-        <div
-          className="slider-banner-wrapper"
-          onMouseDown={handleDragStart}
-          onTouchStart={handleDragStart}
-          onDragStart={(e) => e.preventDefault()}
-        >
-          <div
-            className="slider-banner-track"
-            style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-          >
-            {heroSlides.map((slide) => (
-              <a
-                key={slide.id}
-                href={slide.link}
-                className="slider-banner-link"
-                onClick={handleLinkClick}
-                onDragStart={(e) => e.preventDefault()}
-              >
-                <img
-                  src={slide.imageUrl}
-                  alt={slide.tabTitle}
-                  className="slider-banner-img"
-                  draggable="false"
-                />
-              </a>
-            ))}
-          </div>
-
-          <button
-            className="banner-nav-btn nav-left"
-            onClick={handlePrevSlide}
-            aria-label="Slide trước"
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="35" height="35">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button
-            className="banner-nav-btn nav-right"
-            onClick={handleNextSlide}
-            aria-label="Slide tiếp theo"
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="35" height="35">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-        </div>
+        <SliderBanner
+          activeIndex={activeIndex}
+          handleDragStart={handleDragStart}
+          handleLinkClick={handleLinkClick}
+          handlePrevSlide={handlePrevSlide}
+          handleNextSlide={handleNextSlide}
+        />
       </div>
 
       <SliderSubBanners />
-    </div>
-  );
-}
-
-function SliderSubBanners() {
-  return (
-    <div className="slider-sub-banners">
-      {subBannersList.map((banner) => (
-        <a key={banner.id} href={banner.link} className="sub-banner-item">
-          <img src={banner.imageUrl} alt={banner.title} />
-        </a>
-      ))}
     </div>
   );
 }
