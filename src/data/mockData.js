@@ -86,37 +86,37 @@ export const searchTrendingItems = [
   {
     id: 2,
     name: "Samsung Galaxy S24 Ultra",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-1.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:40:40/q:100/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-222_3_1.png"
   },
   {
     id: 3,
     name: "MacBook Air M3 13 inch",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/macbook-air-m3-13-inch.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:100:100/q:100/plain/https://cellphones.com.vn/media/catalog/product/m/a/macbook_1__2_5.png"
   },
   {
     id: 4,
     name: "iPad Air 6 M2 11 inch",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/ipad-air-6-11-inch_1.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:100:100/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/ipad-air-6-m2-11-inch-256gb_9_.jpg"
   },
   {
     id: 5,
     name: "Tai nghe Bluetooth AirPods 3",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/i/airpods-3-select.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:40:40/q:100/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-airpods-4-thumb.png"
   },
   {
     id: 6,
     name: "Loa Bluetooth Sony SRS-XE200",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-sony-srs-xe200_1.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:100:100/q:100/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-bluetooth-sony-srs-xe200.png"
   },
   {
     id: 7,
     name: "Robot hút bụi Xiaomi Vacuum E10",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/o/robot-hut-bui-xiaomi-vacuum-e10_1.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/v/a/vacuum-mop-5-pro.jpg"
   },
   {
     id: 8,
     name: "Apple Watch Series 9 41mm GPS",
-    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm_1.png"
+    image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple_lte_2_1.png"
   }
 ];
 
@@ -434,7 +434,7 @@ export const categoryIcons = {
   "news": "https://dashboard.cellphones.com.vn/storage/icon-homepage-tech-news.svg"
 };
 
-// 10. Logo thương hiệu chính thức từ CDN CellphoneS (dùng chữ thường làm key để tìm kiếm không phân biệt hoa thường)
+// 10. Logo thương hiệu chính thức từ CDN CellphoneS
 export const brandLogos = {
   "iphone": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/iPhone-240x50.png",
   "ipad": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/iPad-240x50.png",

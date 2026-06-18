@@ -171,6 +171,9 @@
   color: #333333;
   margin-bottom: 8px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .trending-grid {
