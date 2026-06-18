@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #d70018;
+  --primary-hover: #b20013;
+  --bg-header: #d91523;
+  --topbar-gradient: linear-gradient(180deg, #e3505f 0%, #e14854 100%);
+  --navbar-gradient: linear-gradient(180deg, #e14854 0%, #de3b47 40%, #d91523 100%);
+  --bg-page: #f4f4f4;
+  --text-dark: #3f3f3f;
+  --text-light: #707070;
+  --text-white: #ffffff;
+  --border-color: #e5e7eb;
+  --border-radius-lg: 12px;
+  --border-radius-md: 8px;
+  --border-radius-sm: 4px;
+  --font-family: 'Inter', sans-serif;
+  --max-width: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.modal-body::-webkit-scrollbar,
+.trending-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track,
+.trending-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb,
+.trending-grid::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover,
+.trending-grid::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
