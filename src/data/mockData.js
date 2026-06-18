@@ -320,30 +320,65 @@ export const sidebarCategories = [
 export const heroSlides = [
   {
     id: 1,
-    tabTitle: "XIAOMI 17T | 17T PRO",
-    tabSubtitle: "Nhận quà khủng",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/b2s-tv-to-loa-hay-slider.jpg",
+    tabTitle: "MỪNG KHAI TRƯƠNG",
+    tabSubtitle: "Ưu đãi cực khủng",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/KTBD-Home-6.png",
     link: "#"
   },
   {
     id: 2,
-    tabTitle: "HONOR 200 5G",
-    tabSubtitle: "Biểu tượng nhiếp ảnh AI",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/honor-200-slider-banner-02.png",
+    tabTitle: "GALAXY S26 ULTRA",
+    tabSubtitle: "Siêu Phẩm AI Galaxy",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/Home_s26_0626_2.png",
     link: "#"
   },
   {
     id: 3,
-    tabTitle: "KHUYẾN MÃI WORLD CUP",
-    tabSubtitle: "Ưu đãi đến 50%",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/tv-lg-uu-dai-worldcup.png",
+    tabTitle: "IPHONE 17 PRO MAX",
+    tabSubtitle: "Nâng cấp êm. Thêm khác biệt",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/690x300_iPhone17ProMax_0626.png",
     link: "#"
   },
   {
     id: 4,
-    tabTitle: "TAI NGHE CHỤP TAI",
-    tabSubtitle: "Mở bán giá sốc",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/tai-nghe-chup-tai-mo-ban.png",
+    tabTitle: "OPPO FIND X9 ULTRA | X9S",
+    tabSubtitle: "Mở bán tặng quà 12 triệu",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/Oppofin%20x9%20ultra_oppen-home.png",
+    link: "#"
+  },
+  {
+    id: 5,
+    tabTitle: "XIAOMI 17T | 17T PRO",
+    tabSubtitle: "Bậc thầy Telephoto - Mua ngay",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/Home_17t_0626_1.png",
+    link: "#"
+  },
+  {
+    id: 6,
+    tabTitle: "HONOR 600 5G",
+    tabSubtitle: "Biểu tượng nhiếp ảnh AI",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/home_Honor600_opensale.jpg",
+    link: "#"
+  },
+  {
+    id: 7,
+    tabTitle: "KHUYẾN MÃI WORLD CUP",
+    tabSubtitle: "Ưu đãi đến 50%",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/Home_WC-1.png",
+    link: "#"
+  },
+  {
+    id: 8,
+    tabTitle: "TAI NGHE CHỤP TAI MARSHALL",
+    tabSubtitle: "Mở bán giá hấp dẫn",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/tai-nghe-chup-tai-marshall-milton-anc-home.jpg",
+    link: "#"
+  },
+  {
+    id: 9,
+    tabTitle: "ACER NITRO PROPANEL",
+    tabSubtitle: "Giá siêu rẻ",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1036:450/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/sdbgvd.png",
     link: "#"
   }
 ];
@@ -360,31 +395,26 @@ export const subBannersList = [
   {
     id: 1,
     title: "MacBook Pro",
-    desc: "Nay với M5, M5 Pro và M5 Max.",
-    btnText: "Mua ngay",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:175/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/macbook-pro-m3-uu-dai-sub-banner.png",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:50/plain/https://media-asset.cellphones.com.vn/dashboard-v1/mbannnmacpro.png",
     link: "#"
   },
   {
     id: 2,
     title: "Galaxy A57 | A37 5G",
-    desc: "S-Student & S-Teacher Giảm thêm đến 500k",
-    btnText: "Đăng ký nhận thông tin",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:175/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/sub-banner-galaxy-a35.png",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:50/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/a3757-0626.png",
     link: "#"
   },
   {
     id: 3,
-    title: "LAPTOP",
-    desc: "Giảm thêm đến 1 Triệu",
-    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:175/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/laptop-bh-2-nam-sub-banner.png",
+    title: "Laptop",
+    imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:50/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/Artboard5.png",
     link: "#"
   }
 ];
 
 // 8. Banner lớn dưới cùng (Bottom Wide Banner)
 export const bottomWideBannerData = {
-  imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1200:115/q:90/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/b2s-banner-chay-ngang-deal-khung.gif",
+  imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:1200:75/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/Special-banner-1-Sau-13.gif",
   link: "#"
 };
 
@@ -439,3 +469,47 @@ export const brandLogos = {
   "hp": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/HP-240x50.png",
   "gigabyte": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:100/plain/https://cellphones.com.vn/media/wysiwyg/Web/Brand/gigabyte-240x50.png"
 };
+
+// 11. Linh vật chibi Smember từ CellphoneS
+export const smemberMascotUrl = "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:50/plain/https://cellphones.com.vn/media/wysiwyg/ant-smile.png";
+
+// 12. Dữ liệu các nhóm ưu đãi trong widget thứ hai (Quick-links)
+export const quickLinkSections = [
+  {
+    id: "edu",
+    title: "Ưu đãi cho giáo dục",
+    iconType: "education",
+    items: [
+      { id: "edu1", textBefore: "Đăng ký ", textBold: "nhận ưu đãi", textAfter: "" },
+      { id: "edu2", textBefore: "Deal hot ", textBold: "học sinh sinh viên", textAfter: "" },
+      { id: "edu3", textBefore: "Laptop ", textBold: "ưu đãi khủng", textAfter: "" }
+    ]
+  },
+  {
+    id: "trade",
+    title: "Thu cũ lên đời giá hời",
+    iconType: "trade-in",
+    items: [
+      { id: "trade1", textBefore: "iPhone trợ giá ", textBold: "đến 3 triệu", textAfter: "" },
+      { id: "trade2", textBefore: "Samsung trợ giá ", textBold: "đến 4 triệu", textAfter: "" }
+    ]
+  },
+  {
+    id: "b2b-sec",
+    title: "Khách hàng doanh nghiệp (B2B)",
+    iconType: "b2b",
+    items: [
+      { id: "b2b1", textBefore: "Đăng ký ", textBold: "S-Business", textAfter: "" },
+      { id: "b2b2", textBefore: "Chính sách ", textBold: "ưu đãi", textAfter: "" }
+    ]
+  }
+];
+
+// 13. URL ảnh, logo và chibi của Header
+export const headerLogoUrl = "https://cdn2.cellphones.com.vn/x/media/wysiwyg/Web/Logo/Logo_CPS.png";
+export const headerSearchBannerUrl = "https://cdn2.cellphones.com.vn/insecure/rs:fill:595:100/q:100/plain/https://media-asset.cellphones.com.vn/dashboard-v1/manage-banner/b2s-search.png";
+export const smemberChibiModalUrl = "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:80/q:90/plain/https://cellphones.com.vn/media/wysiwyg/chibi2.png";
+
+// 14. URL banner đáy của thẻ Quick-links (Widget)
+export const quickLinksBottomBannerUrl = "https://cdn2.cellphones.com.vn/x/media/wysiwyg/Web/landing-page/hang-moi-ve/promotion_banner04.png";
+

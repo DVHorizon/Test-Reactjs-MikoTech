@@ -1,31 +1,15 @@
-import React from 'react';
 import './TopBar.css';
 import { topBarMarquee } from '../../data/mockData';
 
-const renderText = (item) => {
-  if (item.id === 1 || item.id === 4) {
-    return (
-      <>
-        Sản phẩm <strong>Chính hãng - Xuất VAT</strong> đầy đủ
-      </>
-    );
-  }
-  if (item.id === 2 || item.id === 5) {
-    return (
-      <>
-        <strong>Giao nhanh - Miễn phí</strong> cho đơn 300k
-      </>
-    );
-  }
-  if (item.id === 3) {
-    return (
-      <>
-        <strong>Thu cũ</strong> giá ngon - <strong>Lên đời</strong> tiết kiệm
-      </>
-    );
-  }
-  return item.text;
+const TEXT_TEMPLATES = {
+  1: <>Sản phẩm <strong>Chính hãng - Xuất VAT</strong> đầy đủ</>,
+  4: <>Sản phẩm <strong>Chính hãng - Xuất VAT</strong> đầy đủ</>,
+  2: <><strong>Giao nhanh - Miễn phí</strong> cho đơn 300k</>,
+  5: <><strong>Giao nhanh - Miễn phí</strong> cho đơn 300k</>,
+  3: <><strong>Thu cũ</strong> giá ngon - <strong>Lên đời</strong> tiết kiệm</>
 };
+
+const renderText = (item) => TEXT_TEMPLATES[item.id] || item.text;
 
 function TopBar() {
   return (

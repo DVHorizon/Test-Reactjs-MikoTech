@@ -3,10 +3,7 @@
   height: 80px;
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.18);
 }
 
 .header-content {
@@ -19,7 +16,6 @@
   gap: 20px;
 }
 
-/* 1. Logo */
 .header-logo {
   display: flex;
   align-items: center;
@@ -31,7 +27,6 @@
   object-fit: contain;
 }
 
-/* 2. Nút bấm chung trên Header */
 .header-btn {
   background-color: transparent;
   color: var(--text-white, #ffffff);
@@ -50,7 +45,6 @@
   white-space: nowrap;
 }
 
-/* 3 nút có nền đỏ đặc trưng */
 .btn-category,
 .btn-location,
 .btn-login {
@@ -63,7 +57,6 @@
   background-color: var(--primary-hover);
 }
 
-/* Nút Giỏ hàng không nền */
 .btn-cart {
   background-color: transparent;
 }
@@ -76,17 +69,10 @@
   transform: scale(0.97);
 }
 
-.btn-icon {
-  flex-shrink: 0;
-  stroke: var(--text-white, #ffffff);
-}
-
-/* Nút Danh mục */
 .btn-category {
   font-weight: 400;
 }
 
-/* Nút Chọn Tỉnh/Thành phố */
 .btn-location {
   padding: 6px 10px;
 }
@@ -98,11 +84,6 @@
   line-height: 1.2;
 }
 
-.location-label {
-  font-size: 10px;
-  opacity: 0.85;
-}
-
 .location-value {
   font-size: 15px;
   font-weight: 400;
@@ -111,11 +92,6 @@
   gap: 4px;
 }
 
-.dropdown-arrow {
-  opacity: 0.8;
-}
-
-/* 3. Thanh tìm kiếm */
 .header-search-container {
   flex-grow: 1;
   position: relative;
@@ -134,11 +110,6 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.search-icon-svg {
-  color: #777777;
-  flex-shrink: 0;
-}
-
 .search-input {
   border: none;
   background: none;
@@ -152,7 +123,6 @@
   color: #888888;
 }
 
-/* Dropdown tìm kiếm */
 .search-dropdown {
   position: absolute;
   top: 54px;
@@ -162,7 +132,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 1000;
-  overflow: hidden;
   border: 1px solid #eaeaea;
 }
 
@@ -188,6 +157,8 @@
   width: 100%;
   height: auto;
   display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .search-dropdown-body {
@@ -247,7 +218,6 @@
   text-align: center;
 }
 
-/* 4. Giỏ hàng */
 .btn-cart {
   padding: 8px 14px;
 }
@@ -258,37 +228,17 @@
   align-items: center;
 }
 
-.cart-badge {
-  position: absolute;
-  top: -6px;
-  right: -8px;
-  background-color: #e5a700;
-  color: #ffffff;
-  font-size: 9px;
-  font-weight: bold;
-  height: 14px;
-  min-width: 14px;
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 3px;
-  border: 1px solid var(--primary-color, #e0052b);
-}
-
-/* 5. Đăng nhập */
 .btn-login {
   background-color: #e45464;
 }
 
-/* Modal Đăng nhập & Giỏ hàng */
 .auth-modal {
   position: relative;
   background-color: #ffffff;
   border-radius: 12px;
   width: 90%;
-  max-width: 440px;
-  padding: 30px 24px;
+  max-width: 360px;
+  padding: 20px 22px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -318,7 +268,7 @@
   font-size: 20px;
   font-weight: 700;
   color: var(--primary-color, #d70018);
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -332,16 +282,17 @@
 
 .auth-modal-chibi {
   height: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   object-fit: contain;
 }
 
 .auth-modal-text {
   font-size: 13.5px;
-  color: #444444;
+  color: #000000;
   text-align: center;
-  line-height: 1.5;
-  margin-bottom: 24px;
+  line-height: 2;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .auth-modal-actions {
@@ -358,8 +309,12 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease, color 0.2s ease;
   box-sizing: border-box;
+}
+
+.auth-modal-btn:hover {
+  transform: scale(1.02);
 }
 
 .btn-signup-modal {
@@ -373,21 +328,19 @@
 }
 
 .btn-login-modal {
-  background-color: var(--primary-color, #d70018);
+  background: linear-gradient(to right, #ff512f, #dd2440);
   border: none;
   color: #ffffff;
 }
 
 .btn-login-modal:hover {
-  background-color: #c40015;
+  background: linear-gradient(to right, #dd2440, #ff512f);
 }
 
-/* Hiệu ứng zoom nhẹ cho Modal */
 .animate-modal-enter {
   animation: modal-enter 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 6. Modal chọn địa điểm */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -453,7 +406,7 @@
   background: none;
   outline: none;
   width: 100%;
-  font-size: 22 px;
+  font-size: 22px;
   color: #333333;
 }
 
@@ -494,7 +447,6 @@
   flex-direction: column;
 }
 
-/* Custom scrollbar for modal body */
 .modal-body::-webkit-scrollbar {
   width: 6px;
 }
@@ -574,127 +526,6 @@
 .text-pure-grey {
   color: rgb(157, 157, 157);
 }
-
-/* Category Dropdown Styles */
-.category-btn-container {
-  position: relative;
-}
-
-.category-dropdown {
-  position: absolute;
-  top: 54px;
-  left: 0;
-  width: 800px;
-  height: 480px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
-  display: flex;
-  overflow: hidden;
-  z-index: 999;
-  border: 1px solid #eaeaea;
-}
-
-.category-menu-left {
-  width: 230px;
-  background-color: #ffffff;
-  border-right: 1px solid #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  padding: 8px 0;
-  overflow-y: auto;
-  flex-shrink: 0;
-}
-
-.category-menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
-  font-size: 13px;
-  color: #333333;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.category-menu-item:hover,
-.category-menu-item.active {
-  background-color: #fdf5f5;
-  color: #d70018;
-  font-weight: 600;
-}
-
-.cat-icon-name {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.cat-name {
-  white-space: nowrap;
-}
-
-.cat-arrow {
-  opacity: 0.5;
-  font-size: 10px;
-  transition: transform 0.15s ease;
-}
-
-.category-menu-item:hover .cat-arrow,
-.category-menu-item.active .cat-arrow {
-  opacity: 1;
-  transform: translateX(2px);
-  color: #d70018;
-}
-
-.category-menu-right {
-  flex-grow: 1;
-  background-color: #fafafa;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.mega-menu-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  animation: fade-in 0.2s ease-out;
-}
-
-.mega-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.mega-group-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: #333333;
-  margin: 0 0 6px 0;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 4px;
-  text-transform: uppercase;
-}
-
-.mega-group-items {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.mega-item {
-  font-size: 12.5px;
-  color: #555555;
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.mega-item:hover {
-  color: #d70018;
-}
-
-
 
 .btn-category.active {
   background-color: var(--primary-hover, #c20014) !important;

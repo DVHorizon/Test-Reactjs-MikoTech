@@ -1,20 +1,19 @@
-/* Cấu hình màu sắc thương hiệu và reset CSS cơ bản */
 :root {
-  --primary-color: #d70018;        /* Màu đỏ CellphoneS */
-  --primary-hover: #b20013;        /* Đỏ sậm khi hover */
-  --bg-header: #d91523;            /* Màu đỏ nền header */
+  --primary-color: #d70018;
+  --primary-hover: #b20013;
+  --bg-header: #d91523;
   --topbar-gradient: linear-gradient(180deg, #e3505f 0%, #e14854 100%);
   --navbar-gradient: linear-gradient(180deg, #e14854 0%, #de3b47 40%, #d91523 100%);
-  --bg-page: #f4f4f4;              /* Màu nền xám nhạt toàn trang */
-  --text-dark: #3f3f3f;            /* Màu chữ tối chính */
-  --text-light: #707070;           /* Màu chữ xám phụ */
+  --bg-page: #f4f4f4;
+  --text-dark: #3f3f3f;
+  --text-light: #707070;
   --text-white: #ffffff;
-  --border-color: #e5e7eb;         /* Màu đường viền */
-  --border-radius-lg: 12px;        /* Bo góc lớn cho modal, widget */
-  --border-radius-md: 8px;         /* Bo góc vừa cho banner, input */
-  --border-radius-sm: 4px;         /* Bo góc nhỏ cho tag, badge */
+  --border-color: #e5e7eb;
+  --border-radius-lg: 12px;
+  --border-radius-md: 8px;
+  --border-radius-sm: 4px;
   --font-family: 'Inter', sans-serif;
-  --max-width: 1200px;             /* Chiều rộng giới hạn hiển thị desktop */
+  --max-width: 1240px;
 }
 
 * {
@@ -50,12 +49,10 @@ input {
   outline: none;
 }
 
-/* Hủy outline mặc định khi focus vào button để tránh hiện viền lạ */
 button:focus {
   outline: none;
 }
 
-/* Kiểu thanh cuộn tròn cho các container cuộn cụ thể (tránh ảnh hưởng tới scrollbar chính của trình duyệt) */
 .modal-body::-webkit-scrollbar,
 .trending-grid::-webkit-scrollbar {
   width: 6px;

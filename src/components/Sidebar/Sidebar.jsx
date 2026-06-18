@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Sidebar.css';
 import { sidebarCategories, categoryIcons, brandLogos } from '../../data/mockData';
 
@@ -33,7 +33,6 @@ function Sidebar() {
         ))}
       </aside>
 
-      {/* Mega Menu Display to the right of the Sidebar */}
       {hoveredCategory && (
         <div className="sidebar-mega-menu animate-fade-in">
           {sidebarCategories.map((cat) => {
@@ -41,9 +40,6 @@ function Sidebar() {
             return (
               <div key={cat.id} className="sidebar-mega-content">
                 {cat.subGroups.map((group, groupIdx) => {
-                  // Kiểm tra xem nhóm này có phải là nhóm thương hiệu hay không
-                  const isBrandGroup = group.title.includes('Thương Hiệu') || group.title.includes('Thương hiệu') || group.title.includes('Hãng');
-
                   return (
                     <div key={groupIdx} className="sidebar-mega-group">
                       <h5 className="sidebar-mega-title">{group.title}</h5>
